@@ -18,6 +18,7 @@ root@precise32:/opt/4210/RT288x_SDK/source/user/MT7620App# vim ../Makefile
 ```  
 dir_$(CONFIG_USER_MT7620APP)            += MT7620App  
 ```
+CONFIG_USER_MT7620APP should be the same used in the Kernel menu(../../config/config.in).
 
 Add to the Kernel menu
 =======
@@ -29,6 +30,8 @@ comment 'MT7620App by pengjianqing@gmail.com'
 bool 'myapp'  CONFIG_USER_MT7620APP                                                                                                       
 endmenu
 ```
+You can change 'myapp' to any text, just to identify and match the app to the CONFIG_USER_MT7620APP.
+
 
 Make
 =======
@@ -39,6 +42,5 @@ Make
 ```
 root@precise32:/opt/4210/RT288x_SDK/source# make 
 root@precise32:/opt/4210/RT288x_SDK/source# ls romfs/bin/myapp 
-
 romfs/bin/myapp
 ```
