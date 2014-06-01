@@ -14,10 +14,10 @@ cd MT7620App
 ```
 Add to the Make file 
 =======
+root@precise32:/opt/4210/RT288x_SDK/source/user/MT7620App# vim ../Makefile 
 ```  
 dir_$(CONFIG_USER_MT7620APP)            += MT7620App  
 ```
-root@precise32:/opt/4210/RT288x_SDK/source/user/MT7620App# vim ../Makefile 
 
 Add to the Kernel menu
 =======
@@ -37,6 +37,7 @@ Make
 ![3](https://raw.githubusercontent.com/pjq/MT7620App/master/ScreenShot/Screenshot%202014-06-01%2023.30.49.png "Config 3")
 
 ```
+root@precise32:/opt/4210/RT288x_SDK/source# make 
 root@precise32:/opt/4210/RT288x_SDK/source# ls romfs/bin/myapp 
 
 romfs/bin/myapp
